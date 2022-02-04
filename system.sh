@@ -182,8 +182,7 @@ echo -e " Downloading Dirty Harry YiiMP Repo...$COL_RESET"
 hide_output sudo git clone ${YiiMPRepo} $STORAGE_ROOT/yiimp/yiimp_setup/yiimp
 if [[ ("$CoinPort" == "yes") ]]; then
 	cd $STORAGE_ROOT/yiimp/yiimp_setup/yiimp
-	sudo git fetch
-	sudo git checkout multi-port >/dev/null 2>&1
+	
 fi
 
 echo -e " Downloading Low Difficulty Stratum...$COL_RESET"
